@@ -35,6 +35,15 @@ answer-2: 456
 For this problem set you will use BEDtools to do some calculations. Each
 problem is worth 10 points.
 
+<!-- still need a region file with e.g. genes in BED format -->
+
+These files are in the `data/` directory.
+
+- Fasta file with human genome sequence: `chr1.hg19.fa.gz`
+- Bedgraph with CTCF ChIP-seq data in bedGraph format: `ctcf.hela.chr22.bg.gz`
+- A "genome file" with chromosome size info: `hg19.genome.gz`
+- A file containing transcription start sites (TSS) for `chr22`: `tss.hg19.chr22.bed.gz`
+
 ## Question 1
 
 Use BEDtools intersect to identify the size of the largest overlap between
@@ -53,10 +62,11 @@ has the largest mean signal in `XXX.bg.gz`
 ## Question 4
 
 Use BEDtools to identify the promoter (1000 bp upstream of a TSS)
-containing the single nucleotide with the highest signal in `XXX.bg.gz`.
-Report the interval like `chr1:100-500`.
+containing the single nucleotide with the highest signal in
+`ctcf.hela.chr22.bg.gz`.  Report the interval like `chr1:100-500`.
 
 ## Question 5
 
-Use BEDtools to identify the longest interval that is not covered by
-`XXX.bed.gz`. Report the interval like `chr1:100-500`.
+Use BEDtools to identify the longest interval on `chr22` that is not
+covered by `genes.bed.gz`. Report the interval like `chr1:100-500`.
+
