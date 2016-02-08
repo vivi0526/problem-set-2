@@ -43,7 +43,7 @@ Use BEDtools intersect to identify the size of the largest overlap between
 ## Question 2
 
 Use BEDtools to calculate the GC content of the first 500 bp of chromosome
-22 in the `hg19` genome build.
+22 in the `hg19` genome build. Report as a fraction (e.g., 0.50).
 
 ## Question 3
 
@@ -53,8 +53,10 @@ has the largest mean signal in `XXX.bg.gz`
 ## Question 4
 
 Use BEDtools to identify the promoter (1000 bp upstream of a TSS)
-containing the single nucleotide with the hight signal in `XXX.bg.gz`
+containing the single nucleotide with the highest signal in `XXX.bg.gz`.
+Report the interval like `chr1:100-500`.
 
 ## Question 5
 
-Use BEDtools to XXX
+Use BEDtools to identify the longest interval that is not covered by
+`XXX.bed.gz`. Report the interval like `chr1:100-500`.
