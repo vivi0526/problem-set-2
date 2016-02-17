@@ -33,7 +33,7 @@ answer-2: 456
 ```
 
 For this problem set you will use BEDtools to do some calculations. Each
-problem is worth 10 points.
+problem is worth **10 points**.
 
 These files are in the `data/` directory.
 
