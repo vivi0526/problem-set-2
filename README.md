@@ -35,29 +35,33 @@ answer-2: 456
 For this problem set you will use BEDtools to do some calculations. Each
 problem is worth 10 points.
 
-<!-- still need a region file with e.g. genes in BED format -->
-
 These files are in the `data/` directory.
 
-- Fasta file with human genome sequence: `chr1.hg19.fa.gz`
-- Bedgraph with CTCF ChIP-seq data in bedGraph format: `ctcf.hela.chr22.bg.gz`
-- A "genome file" with chromosome size info: `hg19.genome.gz`
-- A file containing transcription start sites (TSS) for `chr22`: `tss.hg19.chr22.bed.gz`
+- Fasta file with human genome sequence: `fasta/chr1.hg19.fa.gz`
+- BED file containing ChIP-seq peaks for H3K4me3 in Hela cells:
+  `bed/encode.h3k4me3.hela.chr22.bed.gz`
+- BED file with all genes in hg19: `bed/genes.hg19.bed.gz`.
+- File containing peak calls for ENCODE transcription factor ChIP-seq
+  experiements: `bed/encode.tfbs.chr22.bed.gz`.
+- Bedgraph with CTCF ChIP-seq data in bedGraph format: `bedgraph/ctcf.hela.chr22.bg.gz`
+- A "genome file" with chromosome size info: `genome/hg19.genome.gz`
+- A file containing transcription start sites (TSS) for `chr22`: `bed/tss.hg19.chr22.bed.gz`
 
 ## Question 1
 
 Use BEDtools intersect to identify the size of the largest overlap between
-`ctcf.peaks.bed.gz` and `h3XXX.peaks.bed.gz`
+CTCF and H3K4me3 locations.
 
 ## Question 2
 
-Use BEDtools to calculate the GC content of the first 500 bp of chromosome
-22 in the `hg19` genome build. Report as a fraction (e.g., 0.50).
+Use BEDtools to calculate the GC content of nucleotides 100,000 to 200,000
+on chr22 of `hg19` genome build. Report the highest GC content as a
+fraction (e.g., 0.50).
 
 ## Question 3
 
-Use BEDtools to identify the length of the interval in `XXX.bed.gz` that
-has the largest mean signal in `XXX.bg.gz`
+Use BEDtools to identify the length of the CTCF ChIP-seq peak that 
+has the largest mean signal in `ctcf.hela.chr22.bg.gz`.
 
 ## Question 4
 
@@ -68,5 +72,5 @@ containing the single nucleotide with the highest signal in
 ## Question 5
 
 Use BEDtools to identify the longest interval on `chr22` that is not
-covered by `genes.bed.gz`. Report the interval like `chr1:100-500`.
+covered by `genes.hg19.bed.gz`. Report the interval like `chr1:100-500`.
 
