@@ -54,7 +54,7 @@ CTCF and H3K4me3 locations.
 
 ## Question 2
 
-Use BEDtools to calculate the GC content of nucleotides 100,000 to 200,000
+Use BEDtools to calculate the GC content of nucleotides 19,000,000 to 19,000,500 
 on chr22 of `hg19` genome build. Report the highest GC content as a
 fraction (e.g., 0.50).
 
