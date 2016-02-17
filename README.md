@@ -74,3 +74,7 @@ containing the single nucleotide with the highest signal in
 Use BEDtools to identify the longest interval on `chr22` that is not
 covered by `genes.hg19.bed.gz`. Report the interval like `chr1:100-500`.
 
+## Question 6 (extra credit)
+
+Use one or more BEDtools that we haven't covered in class. Impress me.
+
