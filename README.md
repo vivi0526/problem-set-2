@@ -6,34 +6,20 @@
 
 ## Workflow
 
-1. To start, [**fork** the repository][forking].
-1. [**Clone**][ref-clone] the repository to your computer.
-1. Modify the files and [**commit**][ref-commit] changes to complete your
-solution.
-1. [**Push**][ref-push]/sync the changes up to GitHub.
-1. Make corrections until the Travis CI build status icon changes to green
-/ passing
-1. [Create a **pull request**][pull-request] on the original repository to
-turn in the assignment.
+See [here][https://github.com/MOLB7621/Discussion/issues/9] for the
+general workflow.
 
-[forking]: https://guides.github.com/activities/forking/
-[ref-clone]: http://gitref.org/creating/#clone
-[ref-commit]: http://gitref.org/basic/#commit
-[ref-push]: http://gitref.org/remotes/#push
-[pull-request]: https://help.github.com/articles/creating-a-pull-request
-
-For each problem, you should use simple Unix commands to arrive at the
-correct answer.  Put all your work in a `run.sh` file that generates
-a `answers.yml` file.
+Your answers should be in YAML format in a file called `answers.yml` at
+the top level of the repository.
 
 ```
-# ansewer.yml should look like this:
+# answers.yml should look like this:
 answer-1: 123
 answer-2: 456
 ```
 
-For this problem set you will use BEDtools to do some calculations. Each
-problem is worth **10 points**.
+For this problem set you will use BEDtools to do some calculations. **Each
+problem is worth 10 points**.
 
 These files are in the `data/` directory.
 
