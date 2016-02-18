@@ -76,5 +76,5 @@ covered by `genes.hg19.bed.gz`. Report the interval like `chr1:100-500`.
 
 ## Question 6 (extra credit)
 
-Use one or more BEDtools that we haven't covered in class. Impress me.
+Use one or more BEDtools that we haven't covered in class. Be creative.
 
