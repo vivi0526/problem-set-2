@@ -37,14 +37,14 @@ problem is worth **10 points**.
 
 These files are in the `data/` directory.
 
-- Fasta file with human genome sequence: `fasta/chr1.hg19.fa.gz`
+- Fasta file with human genome sequence: `fasta/chr1.hg19.fa`
 - BED file containing ChIP-seq peaks for H3K4me3 in Hela cells:
   `bed/encode.h3k4me3.hela.chr22.bed.gz`
 - BED file with all genes in hg19: `bed/genes.hg19.bed.gz`.
 - File containing peak calls for ENCODE transcription factor ChIP-seq
   experiements: `bed/encode.tfbs.chr22.bed.gz`.
 - Bedgraph with CTCF ChIP-seq data in bedGraph format: `bedgraph/ctcf.hela.chr22.bg.gz`
-- A "genome file" with chromosome size info: `genome/hg19.genome.gz`
+- A "genome file" with chromosome size info: `genome/hg19.genome`
 - A file containing transcription start sites (TSS) for `chr22`: `bed/tss.hg19.chr22.bed.gz`
 
 ## Question 1
@@ -54,20 +54,20 @@ CTCF and H3K4me3 locations.
 
 ## Question 2
 
-Use BEDtools to calculate the GC content of nucleotides 19,000,000 to 19,000,500 
-on chr22 of `hg19` genome build. Report the highest GC content as a
-fraction (e.g., 0.50).
+Use BEDtools to calculate the GC content of nucleotides 19,000,000 to
+19,000,500 on chr22 of `hg19` genome build. Report the GC content
+as a fraction (e.g., 0.50).
 
 ## Question 3
 
-Use BEDtools to identify the length of the CTCF ChIP-seq peak that 
-has the largest mean signal in `ctcf.hela.chr22.bg.gz`.
+Use BEDtools to identify the length of the CTCF ChIP-seq peak (i.e.,
+interval) that has the largest mean signal in `ctcf.hela.chr22.bg.gz`.
 
 ## Question 4
 
-Use BEDtools to identify the promoter (1000 bp upstream of a TSS)
-containing the single nucleotide with the highest signal in
-`ctcf.hela.chr22.bg.gz`.  Report the interval like `chr1:100-500`.
+Use BEDtools to identify the gene promoter (defined as 1000 bp upstream of
+a TSS) with the highest median signal in `ctcf.hela.chr22.bg.gz`.  Report
+the gene name (e.g., 'ABC123')
 
 ## Question 5
 
