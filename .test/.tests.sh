@@ -1,17 +1,14 @@
 #! /bin/bash
 
+answerfile='../answers.yml'
+test -e $answerfile || echo "No answers.yml file!" && exit 1
+
 test -e ssshtest || wget -q https://raw.githubusercontent.com/ryanlayer/ssshtest/master/ssshtest
 source ssshtest
 
 set -o nounset
 
 STOP_ON_FAIL=1
-
-answerfile='../answers.yml'
-if [[ ! -f $answerfile ]]; then
-    echo "Missing 'answers.yml' file. Exiting."
-    exit 1
-fi
 
 answers=(1079 0.384000 850 "PRAME" "chrY:28507239-59100456")
 
